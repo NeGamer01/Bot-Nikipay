@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1780445519744hr0r4",
+    "timestamp": 1780445519744,
+    "type": "order",
+    "status": "sukses",
+    "user": "241862929600639@lid",
+    "produk": "DANA 10.000 Admin 500",
+    "sku": "Dnaa1",
+    "tujuan": "085171502270",
+    "hargaJual": 11842,
+    "hargaModal": 10045,
+    "profit": 1797,
+    "sn": "DNID BAGXX CHOXXXX AMIX/9500/2026060310121481030100166533327903726"
+  },
+  {
+    "id": "1780445111456v3l6j",
+    "timestamp": 1780445111456,
+    "type": "order",
+    "status": "sukses",
+    "user": "241862929600639@lid",
+    "produk": "DANA 10.000 Admin 500",
+    "sku": "Dnaa1",
+    "tujuan": "085171502270",
+    "hargaJual": 11842,
+    "hargaModal": 10045,
+    "profit": 1797,
+    "sn": " DNID BAGXX CHOXXXX AMIX/9500/2026060310121481030100166533327847004"
+  },
+  {
+    "id": "1780399066917s2odq",
+    "timestamp": 1780399066917,
+    "type": "order",
+    "status": "sukses",
+    "user": "241862929600639@lid",
+    "produk": "DANA 10.000 Admin 500",
+    "sku": "Dnaa1",
+    "tujuan": "085171502270",
+    "hargaJual": 11842,
+    "hargaModal": 10045,
+    "profit": 1797,
+    "sn": " DNID BAGXX CHOXXXX AMIX/9500/2026060210121481030100166533327712449"
+  }
+]

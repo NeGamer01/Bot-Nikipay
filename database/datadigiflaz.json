@@ -167,7 +167,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 7 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 18 Vouchers",
@@ -184,7 +184,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 18 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 40 Vouchers",
@@ -201,7 +201,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 40 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 90 Vouchers",
@@ -218,7 +218,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 90 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 230 Vouchers",
@@ -235,7 +235,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 230 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 950 Vouchers",
@@ -252,7 +252,7 @@
     "multi": true,
     "start_cut_off": "23:30",
     "end_cut_off": "0:15",
-    "desc": "AOV 950 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "AOV 1430 Vouchers",
@@ -269,7 +269,7 @@
     "multi": true,
     "start_cut_off": "23:45",
     "end_cut_off": "0:15",
-    "desc": "AOV 1430 Vouchers"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Axis 5.000",
@@ -294,7 +294,7 @@
     "brand": "AXIS",
     "type": "Umum",
     "seller_name": "KC Pulsa",
-    "price": 149745,
+    "price": 149975,
     "buyer_sku_code": "ax10",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -728,7 +728,7 @@
     "multi": true,
     "start_cut_off": "23:55",
     "end_cut_off": "0:5",
-    "desc": "Call of Duty Mobile 2060 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Garena Undawn 1.850 RC",
@@ -909,7 +909,7 @@
     "price": 60136,
     "buyer_sku_code": "Bsbsgsyyo",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -974,7 +974,7 @@
     "brand": "by.U",
     "type": "Umum",
     "seller_name": "TRIVIO RELOAD",
-    "price": 49210,
+    "price": 49200,
     "buyer_sku_code": "byu10",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1008,7 +1008,7 @@
     "brand": "by.U",
     "type": "Umum",
     "seller_name": "TRIVIO RELOAD",
-    "price": 72975,
+    "price": 72835,
     "buyer_sku_code": "byu11",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1025,7 +1025,7 @@
     "brand": "by.U",
     "type": "Umum",
     "seller_name": "TRIVIO RELOAD",
-    "price": 96615,
+    "price": 96975,
     "buyer_sku_code": "byu12",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1161,7 +1161,7 @@
     "brand": "by.U",
     "type": "Umum",
     "seller_name": "Community Reload",
-    "price": 14910,
+    "price": 14860,
     "buyer_sku_code": "byu5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1280,7 +1280,7 @@
     "brand": "by.U",
     "type": "Umum",
     "seller_name": "BCA PULSA  CV BALI CAKRA AMERTA",
-    "price": 34465,
+    "price": 34463,
     "buyer_sku_code": "byu9",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1306,7 +1306,7 @@
     "multi": true,
     "start_cut_off": "0:0",
     "end_cut_off": "0:0",
-    "desc": "Call of Duty Mobile 31 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 800 CP",
@@ -1323,7 +1323,7 @@
     "multi": true,
     "start_cut_off": "23:55",
     "end_cut_off": "0:5",
-    "desc": "Call of Duty Mobile 800 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 1056 CP",
@@ -1331,7 +1331,7 @@
     "brand": "Call of Duty MOBILE",
     "type": "Umum",
     "seller_name": "LUQMANTRONIK",
-    "price": 168025,
+    "price": 168625,
     "buyer_sku_code": "cod11",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1340,7 +1340,7 @@
     "multi": true,
     "start_cut_off": "0:0",
     "end_cut_off": "0:0",
-    "desc": "Call of Duty Mobile 1056CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 1373 CP",
@@ -1357,7 +1357,7 @@
     "multi": true,
     "start_cut_off": "0:0",
     "end_cut_off": "0:0",
-    "desc": "Call of Duty Mobile 1373 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 2640 CP",
@@ -1374,7 +1374,7 @@
     "multi": true,
     "start_cut_off": "23:30",
     "end_cut_off": "0:30",
-    "desc": "Call of Duty Mobile 2640CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 63 CP",
@@ -1391,7 +1391,7 @@
     "multi": true,
     "start_cut_off": "23:55",
     "end_cut_off": "0:5",
-    "desc": "Call of Duty Mobile 63 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 128 CP",
@@ -1408,7 +1408,7 @@
     "multi": true,
     "start_cut_off": "0:0",
     "end_cut_off": "0:0",
-    "desc": "Call of Duty Mobile 128 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 165 CP",
@@ -1425,7 +1425,7 @@
     "multi": false,
     "start_cut_off": "23:44",
     "end_cut_off": "0:16",
-    "desc": "Call of Duty Mobile 165 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 278 CP",
@@ -1442,7 +1442,7 @@
     "multi": false,
     "start_cut_off": "23:44",
     "end_cut_off": "0:16",
-    "desc": "Call of Duty Mobile 278 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 321 CP",
@@ -1459,7 +1459,7 @@
     "multi": true,
     "start_cut_off": "0:0",
     "end_cut_off": "0:0",
-    "desc": "Call of Duty Mobile 321 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 390 CP",
@@ -1476,7 +1476,7 @@
     "multi": false,
     "start_cut_off": "23:44",
     "end_cut_off": "0:16",
-    "desc": "Call of Duty Mobile 390 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Call of Duty Mobile 645 CP",
@@ -1493,7 +1493,7 @@
     "multi": true,
     "start_cut_off": "23:55",
     "end_cut_off": "0:5",
-    "desc": "Call of Duty Mobile 645 CP"
+    "desc": "Masukkan PlayerID"
   },
   {
     "product_name": "Delta Force 18 Delta Coins",
@@ -1518,7 +1518,7 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 686362,
+    "price": 692210,
     "buyer_sku_code": "df10",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1535,7 +1535,7 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 1372308,
+    "price": 1384478,
     "buyer_sku_code": "df11",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1603,7 +1603,7 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 13700,
+    "price": 13920,
     "buyer_sku_code": "df3",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1620,10 +1620,10 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "TOKO KELONTONG 24 JAM",
-    "price": 11755,
+    "price": 13502,
     "buyer_sku_code": "df4",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -1637,7 +1637,7 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 69589,
+    "price": 69200,
     "buyer_sku_code": "df5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1654,7 +1654,7 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 99471,
+    "price": 100494,
     "buyer_sku_code": "df6",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1671,10 +1671,10 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "TOKO KELONTONG 24 JAM",
-    "price": 117601,
+    "price": 135648,
     "buyer_sku_code": "df7",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -1688,10 +1688,10 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "TOKO KELONTONG 24 JAM",
-    "price": 235039,
+    "price": 271453,
     "buyer_sku_code": "df8",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -1705,10 +1705,10 @@
     "brand": "Delta Force",
     "type": "Umum",
     "seller_name": "TOKO KELONTONG 24 JAM",
-    "price": 293827,
+    "price": 339277,
     "buyer_sku_code": "df9",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -1824,7 +1824,7 @@
     "brand": "SMARTFREN",
     "type": "Kuota",
     "seller_name": "BCA PULSA  CV BALI CAKRA AMERTA",
-    "price": 130175,
+    "price": 131375,
     "buyer_sku_code": "Dku7",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -1912,7 +1912,7 @@
     "price": 43333,
     "buyer_sku_code": "Ehhheheyeyeeey",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -2878,7 +2878,7 @@
     "brand": "FREE FIRE",
     "type": "Membership",
     "seller_name": "Mumtazshop",
-    "price": 76025,
+    "price": 75844,
     "buyer_sku_code": "ffmb",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -2929,7 +2929,7 @@
     "brand": "XL",
     "type": "Xtra Combo Flex",
     "seller_name": "TOKOPAY INDONESIA",
-    "price": 63025,
+    "price": 65025,
     "buyer_sku_code": "flexl",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -3218,10 +3218,10 @@
     "brand": "INDOSAT",
     "type": "Freedom Internet",
     "seller_name": "RAJA  PULSA  DATA SE INDONESIA",
-    "price": 30995,
+    "price": 31000,
     "buyer_sku_code": "Freeint9",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": false,
@@ -3592,7 +3592,7 @@
     "brand": "Sausage Man",
     "type": "Umum",
     "seller_name": "BANGJEFF",
-    "price": 427274,
+    "price": 427566,
     "buyer_sku_code": "Gsgshjsjs",
     "buyer_product_status": false,
     "seller_product_status": true,
@@ -3728,7 +3728,7 @@
     "brand": "SMARTFREN",
     "type": "Umum",
     "seller_name": "BCA PULSA  CV BALI CAKRA AMERTA",
-    "price": 10555,
+    "price": 9275,
     "buyer_sku_code": "Hard4",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4156,7 +4156,7 @@
     "price": 32050,
     "buyer_sku_code": "Hsgsggsh",
     "buyer_product_status": true,
-    "seller_product_status": true,
+    "seller_product_status": false,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -4204,7 +4204,7 @@
     "brand": "AXIS",
     "type": "Aigo",
     "seller_name": "masterload8",
-    "price": 22676,
+    "price": 22545,
     "buyer_sku_code": "Hshsgsba",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4272,7 +4272,7 @@
     "brand": "Honkai Star Rail",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 568752,
+    "price": 511683,
     "buyer_sku_code": "hsr11",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4289,7 +4289,7 @@
     "brand": "Honkai Star Rail",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 947886,
+    "price": 852771,
     "buyer_sku_code": "hsr12",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4306,7 +4306,7 @@
     "brand": "Honkai Star Rail",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 1895721,
+    "price": 1705491,
     "buyer_sku_code": "hsr13",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4323,7 +4323,7 @@
     "brand": "Honkai Star Rail",
     "type": "Membership",
     "seller_name": "TOPUPKUY H2H",
-    "price": 94834,
+    "price": 85348,
     "buyer_sku_code": "hsr2",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4357,7 +4357,7 @@
     "brand": "Honkai Star Rail",
     "type": "Membership",
     "seller_name": "TOPUPKUY H2H",
-    "price": 189643,
+    "price": 170671,
     "buyer_sku_code": "hsr4",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4374,7 +4374,7 @@
     "brand": "Honkai Star Rail",
     "type": "Membership",
     "seller_name": "TOPUPKUY H2H",
-    "price": 284452,
+    "price": 255994,
     "buyer_sku_code": "hsr5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4459,7 +4459,7 @@
     "brand": "Steam Wallet (IDR)",
     "type": "Umum",
     "seller_name": "Toko GD",
-    "price": 11610,
+    "price": 11700,
     "buyer_sku_code": "Hwhhwhhh",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4493,7 +4493,7 @@
     "brand": "INDOSAT",
     "type": "Freedom Combo",
     "seller_name": "RAJA  PULSA  DATA SE INDONESIA",
-    "price": 36735,
+    "price": 36335,
     "buyer_sku_code": "ifc1",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4527,7 +4527,7 @@
     "brand": "INDOSAT",
     "type": "Freedom Combo",
     "seller_name": "PT  ASWAJA SARI JAWADWIPA",
-    "price": 72757,
+    "price": 71807,
     "buyer_sku_code": "ifc3",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -4717,7 +4717,7 @@
     "price": 59646,
     "buyer_sku_code": "Jsnshshggs",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": false,
@@ -5168,7 +5168,7 @@
     "desc": "Xtra Combo Flex XL"
   },
   {
-    "product_name": "MOBILELEGEND - 3 Diamond",
+    "product_name": "MOBILE LEGENDS 3 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5185,24 +5185,24 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 5 Diamond",
+    "product_name": "MOBILE LEGENDS 5 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
-    "seller_name": "GO RELOAD ID",
-    "price": 1675,
+    "seller_name": "EASLY ID",
+    "price": 1471,
     "buyer_sku_code": "Ml1",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
-    "start_cut_off": "23:30",
-    "end_cut_off": "0:30",
+    "start_cut_off": "0:0",
+    "end_cut_off": "0:0",
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 46 Diamond",
+    "product_name": "MOBILE LEGENDS 46 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5219,12 +5219,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 54 Diamond",
+    "product_name": "MOBILE LEGENDS 54 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "BTU",
-    "price": 16334,
+    "price": 16181,
     "buyer_sku_code": "ml11",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5236,12 +5236,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 59 Diamond",
+    "product_name": "MOBILE LEGENDS 59 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "Lapakgamingdotcom",
-    "price": 16665,
+    "price": 16691,
     "buyer_sku_code": "ml12",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5253,7 +5253,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 85 Diamond",
+    "product_name": "MOBILE LEGENDS 85 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5270,7 +5270,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 88 Diamond",
+    "product_name": "MOBILE LEGENDS 88 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5287,7 +5287,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 110 Diamond",
+    "product_name": "MOBILE LEGENDS 110 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5304,12 +5304,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 113 Diamond",
+    "product_name": "MOBILE LEGENDS 113 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 31625,
+    "price": 31731,
     "buyer_sku_code": "ml17",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5321,12 +5321,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 128 Diamond",
+    "product_name": "MOBILE LEGENDS 128 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "BTU",
-    "price": 37884,
+    "price": 37994,
     "buyer_sku_code": "ml18",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5338,7 +5338,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 10 Diamond",
+    "product_name": "MOBILE LEGENDS 10 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5355,12 +5355,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 148 Diamond",
+    "product_name": "MOBILE LEGENDS 148 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 41425,
+    "price": 41587,
     "buyer_sku_code": "ml20",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5372,12 +5372,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 176 Diamond",
+    "product_name": "MOBILE LEGENDS 176 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 49264,
+    "price": 49462,
     "buyer_sku_code": "ml22",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5389,7 +5389,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 184 Diamond",
+    "product_name": "MOBILE LEGENDS 184 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5406,7 +5406,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 222 Diamond",
+    "product_name": "MOBILE LEGENDS 222 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5423,7 +5423,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 284 Diamond",
+    "product_name": "MOBILE LEGENDS 284 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5440,7 +5440,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 296 Diamond",
+    "product_name": "MOBILE LEGENDS 296 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5457,7 +5457,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 12 Diamond",
+    "product_name": "MOBILE LEGENDS 12 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5474,7 +5474,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 408 Diamond",
+    "product_name": "MOBILE LEGENDS 408 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5491,7 +5491,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 600 Diamond",
+    "product_name": "MOBILE LEGENDS 600 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5508,12 +5508,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 758 Diamond",
+    "product_name": "MOBILE LEGENDS 758 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 206265,
+    "price": 206438,
     "buyer_sku_code": "ml39",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5525,7 +5525,24 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 790 Diamond",
+    "product_name": "MOBILE LEGENDS 14 Diamond",
+    "category": "Games",
+    "brand": "MOBILE LEGENDS",
+    "type": "Umum",
+    "seller_name": "NEXT GAME 2",
+    "price": 4322,
+    "buyer_sku_code": "Ml4",
+    "buyer_product_status": false,
+    "seller_product_status": true,
+    "unlimited_stock": true,
+    "stock": 0,
+    "multi": true,
+    "start_cut_off": "0:0",
+    "end_cut_off": "0:0",
+    "desc": "no pelanggan = gabungan antara user_id dan zone_id"
+  },
+  {
+    "product_name": "MOBILE LEGENDS 790 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5542,7 +5559,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 845 Diamond",
+    "product_name": "MOBILE LEGENDS 845 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5559,7 +5576,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 938 Diamond",
+    "product_name": "MOBILE LEGENDS 938 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5576,7 +5593,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 1159 Diamond",
+    "product_name": "MOBILE LEGENDS 1159 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5593,12 +5610,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 1443 Diamond",
+    "product_name": "MOBILE LEGENDS 1443 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "KiosGame",
-    "price": 392920,
+    "price": 393224,
     "buyer_sku_code": "ml47",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5610,7 +5627,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 2010 Diamond",
+    "product_name": "MOBILE LEGENDS 2010 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5627,12 +5644,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 18 Diamond",
+    "product_name": "MOBILE LEGENDS 18 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "TOPUPKUY H2H",
-    "price": 5714,
+    "price": 5700,
     "buyer_sku_code": "ml5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5644,7 +5661,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 2232 Diamond",
+    "product_name": "MOBILE LEGENDS 2232 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5661,7 +5678,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 2380 Diamond",
+    "product_name": "MOBILE LEGENDS 2380 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5678,7 +5695,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 2578 Diamond",
+    "product_name": "MOBILE LEGENDS 2578 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5695,7 +5712,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 2625 Diamond",
+    "product_name": "MOBILE LEGENDS 2625 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5712,7 +5729,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 3453 Diamond",
+    "product_name": "MOBILE LEGENDS 3453 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5729,7 +5746,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 3738 Diamond",
+    "product_name": "MOBILE LEGENDS 3738 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5746,7 +5763,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 4020 Diamond",
+    "product_name": "MOBILE LEGENDS 4020 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5763,7 +5780,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 4588 Diamond",
+    "product_name": "MOBILE LEGENDS 4588 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5780,7 +5797,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 4830 Diamond",
+    "product_name": "MOBILE LEGENDS 4830 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5797,12 +5814,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 19 Diamond",
+    "product_name": "MOBILE LEGENDS 19 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "Lapakgamingdotcom",
-    "price": 5742,
+    "price": 5751,
     "buyer_sku_code": "ml6",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5819,7 +5836,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Membership",
     "seller_name": "Squarestore",
-    "price": 30371,
+    "price": 30167,
     "buyer_sku_code": "ml60",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5848,7 +5865,7 @@
     "desc": "-"
   },
   {
-    "product_name": "MOBILELEGEND - 28 Diamond",
+    "product_name": "MOBILE LEGENDS 28 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5865,7 +5882,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 36 Diamond",
+    "product_name": "MOBILE LEGENDS 36 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5882,12 +5899,12 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 44 Diamond",
+    "product_name": "MOBILE LEGENDS 44 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
     "seller_name": "Lapakgamingdotcom",
-    "price": 12594,
+    "price": 12615,
     "buyer_sku_code": "ml9",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5899,7 +5916,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 74 Diamond",
+    "product_name": "MOBILE LEGENDS 74 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5916,7 +5933,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 240 Diamond",
+    "product_name": "MOBILE LEGENDS 240 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5933,7 +5950,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 277 Diamond",
+    "product_name": "MOBILE LEGENDS 277 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5950,7 +5967,7 @@
     "desc": "no pelanggan = gabungan antara user_id dan zone_id"
   },
   {
-    "product_name": "MOBILELEGEND - 568 Diamond",
+    "product_name": "MOBILE LEGENDS 568 Diamond",
     "category": "Games",
     "brand": "MOBILE LEGENDS",
     "type": "Umum",
@@ -5972,7 +5989,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Malaysia",
     "seller_name": "Diamond Store",
-    "price": 4111,
+    "price": 4090,
     "buyer_sku_code": "mlml14",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -5989,7 +6006,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Malaysia",
     "seller_name": "Diamond Store",
-    "price": 12328,
+    "price": 12264,
     "buyer_sku_code": "mlml42",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -6006,7 +6023,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Malaysia",
     "seller_name": "Diamond Store",
-    "price": 16217,
+    "price": 16041,
     "buyer_sku_code": "mlml50",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -6023,7 +6040,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Malaysia",
     "seller_name": "Diamond Store",
-    "price": 20452,
+    "price": 20345,
     "buyer_sku_code": "mlml70",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -6040,7 +6057,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Malaysia",
     "seller_name": "YokCash",
-    "price": 170948,
+    "price": 173640,
     "buyer_sku_code": "mlmltp1",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -6142,7 +6159,7 @@
     "brand": "MOBILE LEGENDS",
     "type": "Membership",
     "seller_name": "BTU",
-    "price": 122680,
+    "price": 119188,
     "buyer_sku_code": "mlw5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -6604,7 +6621,7 @@
     "price": 41045,
     "buyer_sku_code": "Nsbsgdhkka",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": false,
@@ -7706,7 +7723,7 @@
     "brand": "INDOSAT",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 25375,
+    "price": 25300,
     "buyer_sku_code": "sat5",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -7740,7 +7757,7 @@
     "brand": "INDOSAT",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 30350,
+    "price": 30300,
     "buyer_sku_code": "sat7",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -7910,7 +7927,7 @@
     "brand": "SMARTFREN",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 4990,
+    "price": 4955,
     "buyer_sku_code": "sm2",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8369,7 +8386,7 @@
     "brand": "TRI",
     "type": "AlwaysOn",
     "seller_name": "Distara Nusantara",
-    "price": 24360,
+    "price": 24260,
     "buyer_sku_code": "Taon6",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8386,7 +8403,7 @@
     "brand": "TELKOMSEL",
     "type": "Eksklusif",
     "seller_name": "Distara Nusantara",
-    "price": 35125,
+    "price": 36025,
     "buyer_sku_code": "teks1",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8573,7 +8590,7 @@
     "brand": "TELKOMSEL",
     "type": "Umum",
     "seller_name": "PT SELULAR MEDIA INFOTAMA",
-    "price": 96590,
+    "price": 97025,
     "buyer_sku_code": "tel16",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8607,7 +8624,7 @@
     "brand": "TELKOMSEL",
     "type": "Umum",
     "seller_name": "PT SELULAR MEDIA INFOTAMA",
-    "price": 144850,
+    "price": 144815,
     "buyer_sku_code": "tel18",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8742,16 +8759,16 @@
     "category": "Pulsa",
     "brand": "TELKOMSEL",
     "type": "Umum",
-    "seller_name": "DMultiraya",
-    "price": 10260,
+    "seller_name": "BILINK",
+    "price": 10141,
     "buyer_sku_code": "tel3",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
-    "start_cut_off": "22:34",
-    "end_cut_off": "23:34",
+    "start_cut_off": "0:0",
+    "end_cut_off": "0:0",
     "desc": "Reguler"
   },
   {
@@ -8794,7 +8811,7 @@
     "brand": "TELKOMSEL",
     "type": "Umum",
     "seller_name": "PT Orbit Tekhnologi Indonesia",
-    "price": 34457,
+    "price": 34450,
     "buyer_sku_code": "tel7",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8811,7 +8828,7 @@
     "brand": "TELKOMSEL",
     "type": "Umum",
     "seller_name": "PT SELULAR MEDIA INFOTAMA",
-    "price": 39125,
+    "price": 39110,
     "buyer_sku_code": "tel8",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -8844,16 +8861,16 @@
     "category": "Data",
     "brand": "TELKOMSEL",
     "type": "Mini",
-    "seller_name": "Banua Epay",
-    "price": 10155,
+    "seller_name": "SatSetPay",
+    "price": 7650,
     "buyer_sku_code": "temi1",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
-    "start_cut_off": "23:45",
-    "end_cut_off": "0:15",
+    "start_cut_off": "1:0",
+    "end_cut_off": "1:0",
     "desc": "nasional 24 jam"
   },
   {
@@ -9117,7 +9134,7 @@
     "brand": "PLN",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 1001275,
+    "price": 1001040,
     "buyer_sku_code": "Tkl10",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9202,7 +9219,7 @@
     "brand": "PLN",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 51275,
+    "price": 51040,
     "buyer_sku_code": "Tkl6",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9236,7 +9253,7 @@
     "brand": "PLN",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 201275,
+    "price": 201040,
     "buyer_sku_code": "Tkl8",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9253,7 +9270,7 @@
     "brand": "PLN",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 501275,
+    "price": 501040,
     "buyer_sku_code": "Tkl9",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9372,7 +9389,7 @@
     "brand": "TRI",
     "type": "Umum",
     "seller_name": "PT WIJAYA KOMUNIKA PAYMENT",
-    "price": 47593,
+    "price": 48925,
     "buyer_sku_code": "tr10",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9423,7 +9440,7 @@
     "brand": "TRI",
     "type": "Umum",
     "seller_name": "TRAVEL PULSA",
-    "price": 116885,
+    "price": 116945,
     "buyer_sku_code": "tr13",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -9474,7 +9491,7 @@
     "brand": "TRI",
     "type": "Umum",
     "seller_name": "Metro Reload Tk 3",
-    "price": 11485,
+    "price": 10155,
     "buyer_sku_code": "tr4",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -10137,7 +10154,7 @@
     "brand": "SMARTFREN",
     "type": "Unlimited",
     "seller_name": "Premium Pulsa",
-    "price": 22098,
+    "price": 17685,
     "buyer_sku_code": "vsf1",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -10256,10 +10273,10 @@
     "brand": "SMARTFREN",
     "type": "Unlimited Nonstop",
     "seller_name": "Premium Pulsa",
-    "price": 74661,
+    "price": 65490,
     "buyer_sku_code": "vsfu6",
     "buyer_product_status": true,
-    "seller_product_status": false,
+    "seller_product_status": true,
     "unlimited_stock": true,
     "stock": 0,
     "multi": true,
@@ -10766,7 +10783,7 @@
     "brand": "XL",
     "type": "Umum",
     "seller_name": "Adelia Reload",
-    "price": 5600,
+    "price": 5500,
     "buyer_sku_code": "X1",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -10885,7 +10902,7 @@
     "brand": "XL",
     "type": "Umum",
     "seller_name": "Adelia Reload",
-    "price": 10525,
+    "price": 10500,
     "buyer_sku_code": "X2",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -10936,7 +10953,7 @@
     "brand": "XL",
     "type": "Umum",
     "seller_name": "BCA PULSA  CV BALI CAKRA AMERTA",
-    "price": 30017,
+    "price": 30004,
     "buyer_sku_code": "x6",
     "buyer_product_status": true,
     "seller_product_status": true,
@@ -11424,29 +11441,12 @@
     "desc": "Paket Harian S, 5hr"
   },
   {
-    "product_name": "XL Data Paket Harian M 5 Hari",
-    "category": "Data",
-    "brand": "XL",
-    "type": "Harian",
-    "seller_name": "Sunreload",
-    "price": 20010,
-    "buyer_sku_code": "xlha7",
-    "buyer_product_status": true,
-    "seller_product_status": true,
-    "unlimited_stock": true,
-    "stock": 0,
-    "multi": true,
-    "start_cut_off": "23:59",
-    "end_cut_off": "0:30",
-    "desc": "Paket Harian M, 5hr"
-  },
-  {
     "product_name": "XL Data Paket Harian M 7 Hari",
     "category": "Data",
     "brand": "XL",
     "type": "Harian",
     "seller_name": "Community Reload",
-    "price": 20885,
+    "price": 20799,
     "buyer_sku_code": "xlha9",
     "buyer_product_status": true,
     "seller_product_status": true,

@@ -1,4 +1,4 @@
-const { getProdukByBrand, calculateProfit, toRupiah } = require('../../lib/digiflazz')
+const { toRupiah } = require('../../lib/digiflazz')
 
 function detectProvider(nomor) {
   const n = nomor.replace(/^(\+62|62|0)/, '0')
@@ -44,6 +44,7 @@ module.exports = {
     }
 
     const provider = providers[0]
+    const { getProdukByBrand, calculateProfit } = require('../../lib/digiflazz')
     const produkList = getProdukByBrand(provider)
       .filter(p => p.category === 'Data' && p.type !== 'Cek Paket')
 
@@ -51,7 +52,6 @@ module.exports = {
       text: `❌ Produk kuota ${provider} tidak tersedia. Owner jalankan *.getdigi* dulu.`
     }, { quoted: msg.original })
 
-    // Kelompokkan per type
     const grouped = {}
     for (const p of produkList) {
       const type = p.type || 'Umum'
@@ -60,7 +60,6 @@ module.exports = {
     }
 
     if (device === 'android') {
-      // Max 5 sections x 10 rows = 50 produk
       const sections = []
       for (const [type, prods] of Object.entries(grouped)) {
         if (sections.length >= 5) break
@@ -74,15 +73,7 @@ module.exports = {
         })
         sections.push({ title: `📶 ${type}`, rows })
       }
-      await conn.sendList(
-        msg.from,
-        `📶 Kuota ${provider}`,
-        `Nomor: *${nomor}*\nProvider: *${provider}*\n\nPilih paket:`,
-        `${config.botName} | ${prefix}buy <sku> ${nomor}`,
-        `📋 Pilih Kuota`,
-        sections,
-        msg
-      )
+      await conn.sendList(msg.from, `📶 Kuota ${provider}`, `Nomor: *${nomor}*\nProvider: *${provider}*\n\nPilih paket:`, `${config.botName} | ${prefix}buy <sku> ${nomor}`, `📋 Pilih Kuota`, sections, msg)
     } else {
       let teks = `📶 *Kuota ${provider}*\n\nNomor: *${nomor}*\n\n_Ketik *${prefix}buy <sku> ${nomor}* untuk order_\n\n`
       for (const [type, prods] of Object.entries(grouped)) {

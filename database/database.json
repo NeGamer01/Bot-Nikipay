@@ -41,11 +41,11 @@
     },
     "6285171502270@s.whatsapp.net": {
       "name": "",
-      "phone": "",
-      "saldo": 21000,
+      "phone": "085171502270",
+      "saldo": 15000,
       "limit": 25,
       "premium": false,
-      "registered": false,
+      "registered": true,
       "banned": false,
       "lastUse": 0,
       "device": "android",
@@ -53,6 +53,13 @@
       "pendingOrder": null,
       "chatJid": "241862929600639@lid",
       "riwayat": [
+        {
+          "type": "transfer_keluar",
+          "jumlah": 6000,
+          "tujuan": "6283172720524@s.whatsapp.net",
+          "waktu": 1790180670042,
+          "keterangan": "Transfer ke 6283172720524"
+        },
         {
           "type": "addsaldo",
           "status": "sukses",
@@ -242,6 +249,31 @@
       "pendingTransfer": null,
       "riwayat": [],
       "chatJid": "120363409148469742@g.us"
+    },
+    "6283172720524@s.whatsapp.net": {
+      "name": "",
+      "phone": "6283172720524",
+      "saldo": 6000,
+      "limit": 25,
+      "premium": false,
+      "registered": true,
+      "banned": false,
+      "lastUse": 0,
+      "device": null,
+      "pendingDeposit": null,
+      "pendingOrder": null,
+      "pendingTransfer": null,
+      "riwayat": [
+        {
+          "type": "transfer_masuk",
+          "jumlah": 6000,
+          "dari": "241862929600639@lid",
+          "waktu": 1790180670043,
+          "keterangan": "Transfer dari 241862929600639"
+        }
+      ],
+      "chatJid": "90719087755510@lid",
+      "lid": "90719087755510@lid"
     }
   },
   "groups": {

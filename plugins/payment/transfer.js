@@ -8,6 +8,7 @@ module.exports = {
 
   async run({ conn, msg, args, text, db, config, prefix }) {
     const sender = msg.sender
+    let penerimaLid = null
 
     // Cek apakah sudah ada pending transfer
     const user = db.getUser(sender)
@@ -38,12 +39,14 @@ module.exports = {
         const saldoBaruSender = senderSaldo - pending.jumlah
         const saldoBaruPenerima = (penerima.saldo || 0) + pending.jumlah
 
+        // Saldo pengirim & penerima ditulis ke record asli (LID kalau ada)
+        const penerimaKey = pending.penerimaLid || pending.tujuan
         db.setUser(sender, {
           saldo: saldoBaruSender,
           pendingTransfer: null
         })
 
-        db.setUser(pending.tujuan, {
+        db.setUser(penerimaKey, {
           saldo: saldoBaruPenerima
         })
 
@@ -91,9 +94,10 @@ module.exports = {
           mentions: [pending.tujuan]
         }, { quoted: msg.original })
 
-        // Notifikasi ke penerima
+        // Notifikasi ke penerima (kirim ke LID kalau ada, biar sampai)
+        const notifJid = pending.penerimaLid || pending.tujuan
         try {
-          await conn.sendMessage(pending.tujuan, {
+          await conn.sendMessage(notifJid, {
             text: `💰 *Transfer Masuk!*\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n*Jumlah:* Rp ${toRupiah(pending.jumlah)}\n*Dari:* @${sender.split('@')[0]}\n*Saldo kamu sekarang:* Rp ${toRupiah(saldoBaruPenerima)}\n\n_${config.botName}_`,
             mentions: [sender]
           })
@@ -118,9 +122,10 @@ module.exports = {
     }
 
     // Parse argumen: .transfer <nomor> <jumlah>
+    // Nomor diterima: 08xxx, 628xxx, atau +628xxx
     if (args.length < 2) {
       return conn.sendMessage(msg.from, {
-        text: `❌ Format salah!\n\n*Contoh:*\n${prefix}transfer 081234567890 50000\n${prefix}tf 6281234567890 25000\n\n*Catatan:*\n- Nomor bisa dengan atau tanpa kode negara (62)\n- Minimal transfer Rp 5.000`
+        text: `❌ Format salah!\n\n*Contoh:*\n${prefix}transfer 081234567890 50000\n${prefix}tf 6281234567890 25000\n\n*Catatan:*\n- Nomor bisa dengan atau tanpa kode negara (62 / +62 / 08)\n- Minimal transfer Rp 5.000`
       }, { quoted: msg.original })
     }
 
@@ -128,17 +133,19 @@ module.exports = {
     const jumlah = parseInt(args[1])
 
     // Validasi nomor
-    if (!nomorTujuan || nomorTujuan.length < 10) {
+    if (!nomorTujuan || nomorTujuan.length < 9) {
       return conn.sendMessage(msg.from, {
         text: '❌ Nomor tidak valid!'
       }, { quoted: msg.original })
     }
 
     // Normalisasi nomor ke format WhatsApp
+    // 08xxx / 8xxx -> 62xxx, 0xxx -> 62xxx
     let nomorNormal = nomorTujuan
     if (nomorTujuan.startsWith('0')) {
       nomorNormal = '62' + nomorTujuan.substring(1)
     } else if (!nomorTujuan.startsWith('62')) {
+      // asumsi format tanpa negara (8xxx atau 21xxx)
       nomorNormal = '62' + nomorTujuan
     }
 
@@ -169,11 +176,34 @@ module.exports = {
       }, { quoted: msg.original })
     }
 
-    // Cek apakah penerima terdaftar
-    const penerima = db.getUser(tujuanJid)
-    if (!penerima || !penerima.saldo) {
+    // Cek apakah penerima sudah dikenal bot.
+    // WA modern: user pertama kali chat bot tersimpan di bawah key LID
+    // (90719087755510@lid), bukan nomor. resolveByPhone nemu record itu.
+    let penerima = db.getUser(tujuanJid)
+    let penerimaAktif = penerima && (
+      penerima.registered === true ||
+      !!penerima.device ||
+      !!(penerima.riwayat && penerima.riwayat.length) ||
+      !!(penerima.saldo && penerima.saldo > 0)
+    )
+
+    // Kalau lewat nomor WA nggak nemu record yg aktif, coba lewat mapping LID
+    if (!penerimaAktif) {
+      const viaLid = db.resolveByPhone(tujuanJid)
+      if (viaLid) {
+        penerima = viaLid
+        penerimaAktif = viaLid.registered === true ||
+          !!viaLid.device ||
+          !!(viaLid.riwayat && viaLid.riwayat.length) ||
+          !!(viaLid.saldo && viaLid.saldo > 0)
+        const rev = db.lidReverseMap().get(tujuanJid.replace('@s.whatsapp.net', ''))
+        if (rev) penerimaLid = rev.endsWith('@lid') ? rev : rev + '@lid'
+      }
+    }
+
+    if (!penerimaAktif) {
       return conn.sendMessage(msg.from, {
-        text: `❌ Nomor ${nomorTujuan} belum terdaftar di ${config.botName}!`
+        text: `⚠️ Nomor *${nomorTujuan}* belum terdaftar di ${config.botName}.\n\nMinta orang tersebut chat bot & ketik:\n*${prefix}daftar ${nomorNormal}*\n\nSetelah itu dia bisa menerima transfer.`
       }, { quoted: msg.original })
     }
 
@@ -181,6 +211,7 @@ module.exports = {
     db.setUser(sender, {
       pendingTransfer: {
         tujuan: tujuanJid,
+        penerimaLid: penerimaLid,
         jumlah: jumlah,
         waktu: Date.now()
       }

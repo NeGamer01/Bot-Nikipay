@@ -1,0 +1,10 @@
+[2026-09-23T00:05:56.248Z] REQ ref=0b94921da3467bc sku=ff1 tujuan=9876543210 -> status=undefined rc=undefined msg=undefined sn=-
+[2026-09-23T00:06:30.822Z] REQ ref=55ffb82d29aeb0f sku=ff1 tujuan=9876543210 -> status=Sukses rc=undefined msg=Sukses sn=SN-TEST-9876543210-ABCDEFGHIJ
+[2026-09-23T00:14:59.357Z] REQ ref=446b1e15bbe3b22 sku=Ml1 tujuan=157328607716604 -> ERROR HTTP 400 {"data":{"ref_id":"446b1e15bbe3b22","customer_no":"157328607716604","buyer_sku_code":"Ml1","message":"IP Anda tidak kami kenali: 114.79.23.53","status":"Gagal","rc":"45","sn":""}}
+[2026-09-23T00:18:13.605Z] REQ ref=a36070c94b5a1f8 sku=Ml1 tujuan=157328607716604 -> ERROR HTTP 400 {"data":{"ref_id":"a36070c94b5a1f8","customer_no":"157328607716604","buyer_sku_code":"Ml1","message":"IP Anda tidak kami kenali: 114.79.19.49","status":"Gagal","rc":"45","sn":""}}
+[2026-09-23T00:19:35.352Z] REQ ref=dd960ebd6dda331 sku=Ml1 tujuan=157328607716604 -> status=Pending rc=03 msg=Transaksi Pending sn=-
+[2026-09-23T00:20:08.926Z] POLL#15 ref=dd960ebd6dda331 -> status=Pending rc=03 msg=Transaksi Pending
+[2026-09-23T00:20:48.925Z] POLL#30 ref=dd960ebd6dda331 -> status=Pending rc=03 msg=Transaksi Pending
+[2026-09-23T00:21:06.557Z] POLL#35 ref=dd960ebd6dda331 -> status=Gagal rc=02 msg=Transaksi Gagal
+[2026-09-23T00:22:21.005Z] REQ ref=f5358a80518cc96 sku=Ml1 tujuan=157328607716604 -> status=Pending rc=03 msg=Transaksi Pending sn=-
+[2026-09-23T00:22:27.349Z] POLL#3 ref=f5358a80518cc96 -> status=Sukses rc=00 msg=Transaksi Sukses

@@ -1,5 +1,6 @@
 const { createQris, getQrisImage, generateUniqueNominal, checkStatus } = require('../../lib/qris')
 const { toRupiah } = require('../../lib/digiflazz')
+const { sendOwnerNotify } = require('../../lib/ownerNotify')
 const txLogger = require('../../lib/transactionLogger')
 
 module.exports = {
@@ -90,11 +91,10 @@ module.exports = {
             text: `✅ *Deposit Berhasil!*\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n*Nominal:* Rp ${toRupiah(nominal)}\n*Saldo sekarang:* Rp ${toRupiah(saldoBaru)}\n\n_${config.botName}_`
           })
 
-          const ownerJid = config.ownerNumber[0] + '@s.whatsapp.net'
-          await conn.sendMessage(ownerJid, {
-            text: `💰 *Deposit Masuk*\nUser: @${msg.sender.split('@')[0]}\nNominal: Rp ${toRupiah(nominal)}\nSaldo baru: Rp ${toRupiah(saldoBaru)}`,
-            mentions: [msg.sender]
-          })
+          await sendOwnerNotify(conn,
+            `💰 *Deposit Masuk*\nUser: @${msg.sender.split('@')[0]}\nNominal: Rp ${toRupiah(nominal)}\nSaldo baru: Rp ${toRupiah(saldoBaru)}`,
+            [msg.sender]
+          )
         }
       } catch (e) { /* lanjut polling */ }
     }, interval)

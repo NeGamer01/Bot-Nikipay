@@ -1,5 +1,6 @@
 const { calculateProfit, toRupiah, prosesTransaksiDigiflazz } = require('../../lib/digiflazz')
 const { createQris, getQrisImage, generateUniqueNominal, checkStatus } = require('../../lib/qris')
+const { getGame, filterProducts } = require('../../lib/gameCatalog')
 const fs = require('fs')
 const path = require('path')
 
@@ -10,25 +11,57 @@ module.exports = {
   category: 'topup',
   desc: 'Beli produk dengan kode SKU',
   async run({ conn, msg, args, db, config, prefix }) {
-    if (args.length < 2) {
+    if (!args.length) {
       return conn.sendMessage(msg.from, {
-        text: `❌ Format salah!\nContoh: *${prefix}buy ml5 123456789*\n\n_Gunakan ${prefix}ml, ${prefix}ff, ${prefix}pulsa, dll untuk lihat daftar produk & kode SKU_`
+        text: `❌ Format salah!\nContoh: *${prefix}buy ml5*\n\n_ID akan otomatis dipakai dari ${prefix}ml / ${prefix}ff / dll_\n_Atau ketik manual: *${prefix}buy ml5 123456789 1234*_`
       }, { quoted: msg.original })
     }
-
-    const kode = args[0].toLowerCase()
-    const tujuan = args[1]
 
     if (!fs.existsSync(DB_PATH)) {
       return conn.sendMessage(msg.from, { text: '❌ Database produk belum ada. Owner jalankan *.getdigi* dulu.' }, { quoted: msg.original })
     }
 
     const products = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'))
+    const kode = args[0].toLowerCase()
     const produk = products.find(p => p.buyer_sku_code?.toLowerCase() === kode && p.seller_product_status === true)
 
     if (!produk) {
       return conn.sendMessage(msg.from, {
         text: `❌ Kode produk *${kode}* tidak ditemukan.\n\nGunakan ${prefix}ml, ${prefix}ff, ${prefix}pulsa, dll untuk lihat daftar produk & kode SKU.`
+      }, { quoted: msg.original })
+    }
+
+    // Deteksi game (untuk tahu format ID: zone atau biasa)
+    const game = getGameByBrand(products, produk)
+
+    let tujuan = null
+    let dariLastId = false
+
+    if (args.length >= 2) {
+      // Prioritas 1: ID diketik manual
+      tujuan = args[1]
+      // Game zone (ML dll): ID + Zone digabung jadi satu tujuan
+      if (game && game.idFormat === 'zone' && args.length >= 3) {
+        tujuan = `${args[1]}${args[2]}`
+      }
+    } else {
+      // Prioritas 2: ambil ID yang sudah diketik di .ml / .ff / dll
+      const lastId = db.getUser(msg.sender).lastId
+      if (lastId && lastId.tujuan) {
+        // ID tersimpan harus dari brand yang sama
+        if (game && lastId.brand !== game.brand) {
+          return conn.sendMessage(msg.from, {
+            text: `⚠️ ID tersimpan itu untuk game lain.\n\nKetik *${prefix}${game.command} <id>* dulu untuk game ini, atau ketik manual:\n*${prefix}buy ${kode} <id>*`
+          }, { quoted: msg.original })
+        }
+        tujuan = lastId.tujuan
+        dariLastId = true
+      }
+    }
+
+    if (!tujuan) {
+      return conn.sendMessage(msg.from, {
+        text: `❌ Belum ada ID tersimpan.\n\nKetik dulu *${prefix}${game ? game.command : 'ml'} <id>${game && game.idFormat === 'zone' ? ' <zone>' : ''}*, lalu pilih nominal.\nAtau langsung: *${prefix}buy ${kode} <id>*`
       }, { quoted: msg.original })
     }
 
@@ -108,4 +141,11 @@ module.exports = {
       }, interval)
     }
   }
+}
+
+// Cari katalog game berdasarkan brand produk (untuk deteksi format tujuan)
+function getGameByBrand(products, produk) {
+  // brand produk bisa berupa brand Digiflazz langsung
+  const { GAMES } = require('../../lib/gameCatalog')
+  return GAMES.find(g => g.brand.toUpperCase() === String(produk.brand || '').trim().toUpperCase())
 }

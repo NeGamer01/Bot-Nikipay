@@ -1,4 +1,8 @@
-const { getProdukByBrand, calculateProfit, toRupiah } = require('../../lib/digiflazz')
+const { countByCategory, getAvailableGames } = require('../../lib/gameCatalog')
+const { toRupiah } = require('../../lib/digiflazz')
+
+// Operator yang punya produk pulsa — urutan tampil di menu
+const PULSA_OPS = ['TELKOMSEL', 'XL', 'AXIS', 'INDOSAT', 'TRI', 'SMARTFREN', 'by.U']
 
 function detectProvider(nomor) {
   const n = nomor.replace(/^(\+62|62|0)/, '0')
@@ -11,7 +15,6 @@ function detectProvider(nomor) {
     TRI: ['0895','0896','0897','0898','0899'],
     SMARTFREN: ['0881','0882','0883','0884','0885','0886','0887','0888','0889']
   }
-
   const matched = []
   for (const [provider, list] of Object.entries(prefixes)) {
     if (list.some(p => n.startsWith(p))) matched.push(provider)
@@ -37,7 +40,6 @@ module.exports = {
     const user = db.getUser(msg.sender)
     const device = user.device || 'ios'
 
-    // Jika ada lebih dari 1 provider (misal 0851 = Telkomsel atau by.U)
     if (providers.length > 1) {
       const pilihanTeks = providers.map((p, i) => `*${i+1}.* ${p} → ketik *${prefix}pulsa${p.toLowerCase().replace(/[^a-z]/g,'')} ${nomor}*`).join('\n')
       return conn.sendMessage(msg.from, {
@@ -46,6 +48,7 @@ module.exports = {
     }
 
     const provider = providers[0]
+    const { getProdukByBrand, calculateProfit } = require('../../lib/digiflazz')
     const produkList = getProdukByBrand(provider).filter(p => p.category === 'Pulsa')
 
     if (!produkList.length) return conn.sendMessage(msg.from, {
@@ -69,15 +72,7 @@ module.exports = {
         const chunk = allRows.slice(i, i + chunkSize)
         sections.push({ title: `📱 Pulsa ${provider} (${i+1}-${i+chunk.length})`, rows: chunk })
       }
-      await conn.sendList(
-        msg.from,
-        `📱 Pulsa ${provider}`,
-        `Nomor: *${nomor}*\nProvider: *${provider}*\n\nPilih nominal:`,
-        `${config.botName} | ${prefix}buy <sku> ${nomor}`,
-        `📋 Pilih Pulsa`,
-        sections,
-        msg
-      )
+      await conn.sendList(msg.from, `📱 Pulsa ${provider}`, `Nomor: *${nomor}*\nProvider: *${provider}*\n\nPilih nominal:`, `${config.botName} | ${prefix}buy <sku> ${nomor}`, `📋 Pilih Pulsa`, sections, msg)
     } else {
       let teks = `📱 *Pulsa ${provider}*\n\nNomor: *${nomor}*\n\n_Ketik *${prefix}buy <sku> ${nomor}* untuk order_\n\n`
       allRows.forEach((r, i) => {

@@ -9,8 +9,9 @@
   "author": "NIKISTORE",
   "license": "MIT",
   "dependencies": {
-    "baileys": "npm:@sasa-dev/void-baileys",
     "axios": "^1.6.2",
+    "baileys": "npm:@sasa-dev/void-baileys",
+    "canvas": "^3.2.3",
     "chalk": "^4.1.2",
     "fflate": "^0.8.3",
     "figlet": "^1.11.4",

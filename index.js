@@ -237,6 +237,17 @@ async function startBot() {
       original: msg
     }
 
+    // Identitas sender. HARUS dideklarasikan di sini (sebelum handler 'ya'/'batal'
+    // di bawah) supaya isOwner tidak terkena TDZ saat konfirmasi transfer/order.
+    const senderNum = sender.replace(/[^0-9]/g, '')
+    const senderJid = sender.endsWith('@lid')
+      ? (global.lidToNumber.get(sender) ? global.lidToNumber.get(sender) + '@s.whatsapp.net' : sender)
+      : sender
+    const isOwner = config.ownerNumber.some(n => {
+      const nNum = n.replace(/[^0-9]/g, '')
+      return senderJid === nNum + '@s.whatsapp.net' || senderNum === nNum
+    })
+
     // Handle device/tampilan selection response — harus sebelum cek user baru
     if (body === `${config.prefix}button` || body === `${config.prefix}text`) {
       const device = body === `${config.prefix}button` ? 'android' : 'ios'
@@ -391,15 +402,23 @@ async function startBot() {
     }
 
     // Cek user baru — minta pilih tampilan dulu (skip di grup)
+    // Pengecualian: .daftar / .register harus tetap jalan supaya user baru
+    // BISA mendaftar (kalau tidak, user baru nggak pernah lewat gate ini).
     if (!isGroup) {
       const user = db.getUser(sender)
       if (!user.device) {
-        const devicePlugin = plugins['device']
-        if (devicePlugin) {
-          return devicePlugin.run({
-            msg: parsedMsg, conn: sock, args: [], text: '', db, config, plugins,
-            prefix: config.prefix, command: 'device', isOwner: false, isGroup
-          })
+        const cmdName = body.startsWith(config.prefix)
+          ? body.slice(config.prefix.length).trim().split(' ')[0].toLowerCase()
+          : ''
+        const bypassGate = ['daftar', 'register'].includes(cmdName)
+        if (!bypassGate) {
+          const devicePlugin = plugins['device']
+          if (devicePlugin) {
+            return devicePlugin.run({
+              msg: parsedMsg, conn: sock, args: [], text: '', db, config, plugins,
+              prefix: config.prefix, command: 'device', isOwner: false, isGroup
+            })
+          }
         }
       }
     }
@@ -449,15 +468,6 @@ async function startBot() {
     const text = args.join(' ')
     const plugin = plugins[command]
     if (!plugin) return
-
-    const senderNum = sender.replace(/[^0-9]/g, '')
-    const senderJid = sender.endsWith('@lid')
-      ? (global.lidToNumber.get(sender) ? global.lidToNumber.get(sender) + '@s.whatsapp.net' : sender)
-      : sender
-    const isOwner = config.ownerNumber.some(n => {
-      const nNum = n.replace(/[^0-9]/g, '')
-      return senderJid === nNum + '@s.whatsapp.net' || senderNum === nNum
-    })
 
     // Simpan chatJid owner agar notifikasi bisa terkirim (hanya dari PM, bukan grup)
     if (isOwner && !isGroup) {

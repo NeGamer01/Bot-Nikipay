@@ -22,11 +22,9 @@ function loadPlugins() {
   const pluginDir = path.join(__dirname, 'plugins')
   if (!fs.existsSync(pluginDir)) return plugins
 
-  const categories = fs.readdirSync(pluginDir).filter(f =>
+  for (const category of fs.readdirSync(pluginDir).filter(f =>
     fs.statSync(path.join(pluginDir, f)).isDirectory()
-  )
-
-  for (const category of categories) {
+  )) {
     const catPath = path.join(pluginDir, category)
     const files = fs.readdirSync(catPath).filter(f => f.endsWith('.js'))
     for (const file of files) {
@@ -36,7 +34,6 @@ function loadPlugins() {
         for (const name of names) {
           plugins[name] = plugin
         }
-        console.log(chalk.green(`[Plugin] Loaded: ${file} (${category})`))
       } catch (e) {
         console.error(chalk.red(`[Plugin] Error loading ${file}:`), e.message)
       }
@@ -46,7 +43,15 @@ function loadPlugins() {
 }
 
 const plugins = loadPlugins()
-console.log(chalk.cyan(`[Bot] Total ${Object.keys(plugins).length} command(s) loaded`))
+
+// Banner startup NikiStore
+require('./lib/banner').showBanner({
+  title: 'NIKISTORE',
+  creator: config.creatorName,
+  wa: config.creatorWa,
+  group: config.creatorGroupLink,
+  plugins: Object.keys(plugins).length
+})
 
 function getMessageBody(message) {
   return message?.conversation ||

@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Session WhatsApp
+session/
+
+# Log & data runtime
+*.log
+
+# Environment
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
